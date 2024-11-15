@@ -1,0 +1,20 @@
+<body>
+    <script>
+        
+        var edad = parseFloat(prompt("Ingresa tu edad:"));
+        var resultado;
+        if (edad > 0 && edad <= 10) {
+            resultado = "niño";
+        } else if (edad > 10 && edad < 18) {
+            resultado = "adolescente";
+        } else if (edad >= 18 && edad < 60) {
+            resultado = "adulto";
+        } else if (edad >= 60) {
+            resultado = "adulto mayor";
+        } else {
+            resultado = "Edad no válida";
+        }
+        console.log("El resultado es: " + resultado);
+    </script>
+</body>
+

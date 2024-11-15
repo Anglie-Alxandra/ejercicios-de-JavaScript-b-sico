@@ -1,0 +1,17 @@
+<body>
+    <script>
+        var inicio = parseInt(prompt("Ingresa el número de inicio del rango:"));
+        var fin = parseInt(prompt("Ingresa el número de fin del rango:"));
+        var sumatoria = 0;
+        var cantidadNumeros = 0;
+        for (var i = inicio; i <= fin; i++) {
+            sumatoria += i; 
+            cantidadNumeros++; 
+        }
+
+        var promedio = sumatoria / cantidadNumeros;
+
+        console.log("La sumatoria es: " + sumatoria);
+        console.log("El promedio es: " + promedio);
+    </script>
+</body>

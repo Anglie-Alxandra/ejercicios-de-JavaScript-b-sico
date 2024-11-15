@@ -1,0 +1,20 @@
+<body>
+    <script>
+        var numero = parseInt(prompt("Ingresa un número entero positivo:"));
+
+        var sumaPares = 0;
+        var sumaImpares = 0;
+        var i = 1;
+
+        while (i <= numero) {
+            if (i % 2 === 0) {
+                sumaPares += i;
+            } else {
+                sumaImpares += i;
+            }
+            i++;
+        }
+        console.log("La suma de los números pares es: " + sumaPares);
+        console.log("La suma de los números impares es: " + sumaImpares);
+    </script>
+</body>

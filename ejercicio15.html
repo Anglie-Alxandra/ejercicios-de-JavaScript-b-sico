@@ -1,0 +1,16 @@
+<body>
+    <script>
+        const minTemperatura = 18; 
+        const maxTemperatura = 25; 
+        let temperatura;
+        do {
+            temperatura = parseFloat(prompt("Ingresa la temperatura actual en °C:"));
+
+            if (temperatura < minTemperatura || temperatura > maxTemperatura) {
+                alert("Temperatura fuera de rango. Por favor, ingresa una temperatura entre " + minTemperatura + "°C y " + maxTemperatura + "°C.");
+            }
+
+        } while (temperatura < minTemperatura || temperatura > maxTemperatura); 
+        console.log("La temperatura ingresada es: " + temperatura + "°C. Está dentro del rango aceptable.");
+    </script>
+</body>
